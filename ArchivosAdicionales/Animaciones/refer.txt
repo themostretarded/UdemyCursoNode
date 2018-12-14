@@ -1,0 +1,21 @@
+Archivo gratuito del mes de diciembre 2018
+Saludos a todos!
+Ya está disponible el archivo gratuito del mes de diciembre 2018, el cual contiene 15 tipos de animaciones para sus aplicaciones y páginas web.
+Cada código lleva su código fuente y demo que pueden abrir (menos el de greensock, que lleva a un tutorial), también tienen el URL de la página oficial.
+Recuerden que este archivo no lo podrán descargar en otro mes que no sea diciembre 2018 (o quizá los primeros 3 días de enero 2019), así que no  pierdan la oportunidad
+de mantener estos demos en su repertorio de códigos!
+Pueden descargarlo de aquí, no hay que registrarse, no hay que pagar nada, simplemente una descarga directa por ser alumnos míos en algún curso :)
+
+Archivo del mes - Diciembre 2018
+
+Espero que sigan mejorando cada vez más como desarrolladores y sobre todo como personas. Recuerden que cualquier curso mío que deseen,
+pueden obtenerlo al menor precio posible usando los cupones en mi página web.
+
+atte:
+
+Fernando Herrera
+
+Texto de la pagina
+PAQUETE DE ANIMACIONES
+El archivo de este mes consiste en 15 ejemplos de diferentes animaciones html, css y otros con svgs. Cada código tiene su referencia al sitio oficial
+ de donde la obtuve, el ejemplo es totalmente funcional y lo pueden usar en sus proyectos para impresionar clientes o amigos.
