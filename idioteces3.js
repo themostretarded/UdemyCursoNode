@@ -34,26 +34,55 @@ let getEmpleado = (id) => {
     
 }
 
-let getSalario =(empleado)=>{
+let getSalario = (empleado)=>{
     return new Promise((resolve,reject)=>{
-        let salariodb = salarios.find(salario => empleado.id===salario.id);
-        console.log(salariodb)
+        let salarioDB = salarios.find(salario =>salario.id===empleado.id);
+    if(!salarioDB){
+        reject(`No se encontro un salario para el usuario ${empleado.nombre}`)
+    }else{
+        resolve({
+            nombre:empleado.nombre,
+            salario: salarioDB.salario,
+            id:empleado.id
+        });
+    }
+    });
+}
+
+getEmpleado(3).then(empleado =>{
+    getSalario(empleado).then(resp =>{
+        console.log(`el salario de ${resp.nombre} es de ${resp.salario}$`)
+    },err =>{
+        console.log(err)
+    });
+
+},(err)=>{
+    console.log(err);
+});
+
+
+
+
+/*Mi solucion pedorra
+let getSalario =(empleado)=>{
+    let empleadoparam=empleado;
+    return new Promise((resolve,reject)=>{
+        let salariodb = salarios.find(salario => salario.id===empleado);
+        let nombredb = empleados.find(empleado => empleado.id === empleadoparam);
         if(!salariodb){
             reject(`No cuenta con salario`)
         }else{
-            resolve(salariodb)
+            resolve({
+                nombre:nombredb.nombre,
+                salario: salariodb.salario
+            });
         }
     });
 }
 
-getSalario(2).then(salario=>{
-    console.log(`Salario del empleado`,salario)
+getSalario(1).then(Chingado => {
+    console.log(`Salario del empleado`,Chingado)
 },(err)=>{
     console.log(err);
 })
-
-getEmpleado(4).then(empleado =>{
-    console.log(` Empleado de db`,empleado);
-},(err)=>{
-    console.log(err);
-});
+*/
