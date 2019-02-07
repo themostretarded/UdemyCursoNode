@@ -1,0 +1,32 @@
+Material gratuito del mes de Febrero 2019
+Saludos a todos, buen día, tarde o noche!
+
+Paso por aquí para informarles que el material gratuito de febrero 2019 está listo para que lo descarguen desde aquí 
+(No hay que registrarse, no hay nada más que un enlace directo)
+
+Material gratuito - febrero 2019
+(https://fernando-herrera.com/#/mes-gratis)
+
+El archivo de este mes contiene una serie de páginas web que les servirán para poder mostrar información de una manera moderna,
+ utilizando animaciones sutiles pero llamativas. También se incluye un estilo para los indicadores de páginas y un plugin para hacer efectos de velocidad.
+
+
+
+Nota:
+
+También quiero informarles que sigo trabajando en el nuevo curso de ionic 4 >, ya van más de 160 clases grabadas y
+ aún me faltan cosas por enseñar y crear, estoy haciendo mi mejor esfuerzo para tenerlo listo en febrero.Adicionalmente cuando lo termine,
+ subiré aproximadamente 50 videos a youtube sobre ionic 4 para ayudarles un poco sobre cómo funciona, cómo utilizar cada componente en ionic y actualizaré
+ la sección de ionic que tiene el curso de Angular de cero a experto. (poco de paciencia ahí por favor)
+
+Esto es todo el mensaje que quería darles, si quieren saber más sobre cómo va mi trabajo en la creación de cursos y demás, siganme en twitter :)
+
+
+
+Sin más!, los veo en el próximo video!
+
+
+
+atte:
+
+Fernando Herrera
