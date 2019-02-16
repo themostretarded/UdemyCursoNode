@@ -4,10 +4,13 @@ const bcrypt = require('bcrypt');
 const _ = require('underscore');
 
 const Usuario = require('../models/usuario');
+const {
+  verificaToken
+} = require('../middlewares/autenticacion');
 
 const app = express();
 
-app.get('/usuario', function (req, res) {
+app.get('/usuario', [verificaToken], (req, res) => {
 
   let desde = req.query.desde || 0;
   desde = Number(desde);
@@ -15,7 +18,9 @@ app.get('/usuario', function (req, res) {
   let limite = req.query.limite || 5;
   limite = Number(limite)
 
-  Usuario.find({ estado:true }, 'nombre email role estado google img')
+  Usuario.find({
+      estado: true
+    }, 'nombre email role estado google img')
     .skip(desde)
     .limit(limite)
     .exec((err, usuarios) => {
@@ -26,7 +31,9 @@ app.get('/usuario', function (req, res) {
         });
       }
 
-      Usuario.count({estado:true}, (err, conteo) => {
+      Usuario.count({
+        estado: true
+      }, (err, conteo) => {
         res.json({
           ok: true,
           usuarios,
@@ -40,7 +47,7 @@ app.get('/usuario', function (req, res) {
 
 });
 
-app.post('/usuario', function (req, res) {
+app.post('/usuario', [verificaToken], (req, res) => {
 
   let body = req.body;
 
@@ -71,7 +78,7 @@ app.post('/usuario', function (req, res) {
 
 });
 
-app.put('/usuario/:id', function (req, res) {
+app.put('/usuario/:id', [verificaToken], (req, res) => {
 
   let id = req.params.id;
   let body = _.pick(req.body, ['nombre', 'email', 'img', 'role', 'estado']);
@@ -96,13 +103,15 @@ app.put('/usuario/:id', function (req, res) {
   });
 });
 
-app.delete('/usuario/:id', function (req, res) {
+app.delete('/usuario/:id', [verificaToken], (req, res) => {
   let id = req.params.id;
   //Como era antes Usuario.findByIdAndRemove(id, (err, usuarioBorrado) => {
-  let cambiaEstado ={
+  let cambiaEstado = {
     estado: false
-  } 
-  Usuario.findByIdAndUpdate(id,cambiaEstado,{new: true}, (err, usuarioBorrado) => {
+  }
+  Usuario.findByIdAndUpdate(id, cambiaEstado, {
+    new: true
+  }, (err, usuarioBorrado) => {
     if (err) {
       return res.status(400).json({
         ok: false,
@@ -124,7 +133,7 @@ app.delete('/usuario/:id', function (req, res) {
       usuario: usuarioBorrado
     });
 
-  });  
+  });
 
   /*
   Mi respuesta al ejercicio
