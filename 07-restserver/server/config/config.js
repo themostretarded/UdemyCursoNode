@@ -36,3 +36,8 @@ if (process.env.NODE_ENV === 'dev') {
     urlDB = 'mongodb://cafe-user:a123456@ds335275.mlab.com:35275/cafe'
 }
 process.env.URLDB = urlDB;
+
+//  ===============
+//  Google client id
+//  ===============
+process.env.CLIENT_ID = process.env.CLIENT_ID || '550568426076-nqtjo33166uc5bcmi7mjhqattvu4rp7o.apps.googleusercontent.com';

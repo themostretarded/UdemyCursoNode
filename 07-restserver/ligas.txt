@@ -1,0 +1,2 @@
+https://developers.google.com/identity/sign-in/web/sign-in
+https://console.developers.google.com/apis/credentials?project=cursoudemy-1550702994393&authuser=0
