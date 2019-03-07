@@ -12,56 +12,56 @@
  //  ==================
  //  Mostrar todas las categorias
  //  ==================
- app.get('/categoria',verificaToken, (req, res) => {
-    Categoria.find({})
-                .sort('descripcion')
-                .populate('usuario','nombre email')
-                .exec((err,categorias)=>{
-                    if (err) {
-                        return res.status(500).json({
-                            ok: false,
-                            err
-                        });
-                    }
-                    
-                    res.json({
-                        ok: true,
-                        categorias
-                    });
+ app.get('/categoria', verificaToken, (req, res) => {
+     Categoria.find({})
+         .sort('descripcion')
+         .populate('usuario', 'nombre email')
+         .exec((err, categorias) => {
+             if (err) {
+                 return res.status(500).json({
+                     ok: false,
+                     err
+                 });
+             }
 
-                })
+             res.json({
+                 ok: true,
+                 categorias
+             });
+
+         })
  });
 
  //  ==================
  //  Mostrar una categoria por ID
  //  ==================
- app.get('/categoria/:id',verificaToken, (req, res) => {
+ app.get('/categoria/:id', verificaToken, (req, res) => {
      //Categoria.findById(....);
      let id = req.params.id;
 
-    Categoria.findById(id,(err,categoriaDB)=>{
-        if (err) {
-            return res.status(500).json({
-                ok: false,
-                err
-            });
-        }
+     Categoria.findById(id, (err, categoriaDB) => {
+         if (err) {
+             return res.status(500).json({
+                 ok: false,
+                 err
+             });
+         }
 
-        if (!categoriaDB) {
-            return res.status(400).json({
-                ok: false,
-                err:{
-                    message:'Estas seguro del id?'
-                }
-            });
-        }
+         if (!categoriaDB) {
+             return res.status(400).json({
+                 ok: false,
+                 err: {
+                     message: 'Estas seguro del id?'
+                 }
+             });
+         }
 
-        res.json({
-            ok:true,
-            categoria:categoriaDB
-        });
+         res.json({
+             ok: true,
+             categoria: categoriaDB
+         });
 
-    });
+     });
 
  });
 
