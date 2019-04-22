@@ -1,0 +1,2 @@
+EFECTOS Y SHOWCASE
+El archivo contiene muchos estilos para darle formato a textos principalmente, pero también incluye un reproductor de audio y una forma interesante de presentar imágenes de una aplicación móvil en un dispositivo, mediante una página web.
