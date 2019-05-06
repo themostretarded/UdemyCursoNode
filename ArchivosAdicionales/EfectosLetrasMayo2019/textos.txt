@@ -1,0 +1,37 @@
+EFECTOS PARA LETRAS Y ANIMACIONES
+El paquete del mes, contiene alrededor de 20 tipos de ejemplos con letras en CSS y HTML (algunos usan JavaScript), muchos ejercicios son tan elegantes que parecieran imágenes, pero todo esta generado vía código.
+
+
+Material gratuito del mes de mayo 2019!
+Saludos a todos, espero que se encuentren de lo mejor!
+El paquete del mes, contiene alrededor de 20 tipos de ejemplos con letras en CSS y HTML (algunos usan JavaScript), muchos ejercicios son tan elegantes que parecieran imágenes, pero todo está generado vía código.
+
+
+
+Los 20 tipos de ejercicios contenidos en el archivo del mes, les pueden ayudar a crear páginas web o presentaciones web muy llamativas. Espero que estos materiales les sirva bastante. Recuerden que cada archivo tiene su enlace al sitio oficial del mismo.
+
+
+
+Pueden descargarlo desde el siguiente enlace, no hay que registrarse, no hay que pagar, no hay nada más que una descarga directa
+
+https://fernando-herrera.com/#/mes-gratis
+
+
+
+Aprovecho para informarles que este mes espero liberar mi curso de Flutter completo, pero aún no lo termino... si quieren saber más sobre el estado de mis próximos cursos o bien estar pendiente de lo que hago, pueden revisar mi Twitter
+
+https://twitter.com/Fernando_Her85
+
+
+
+Sin más, que disfruten el material y nos vemos en el próximo video!
+
+
+
+PD: Si pueden compartir el enlace o bien ayudarme a llegar a más personas, se los agradecería mucho!
+
+
+
+atte:
+
+Fernando Herrera
